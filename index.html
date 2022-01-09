@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
     <title>Lifestyle DAO</title>
   </head>
   <body>
@@ -58,13 +65,49 @@
         Team, FAQ’s, and More Coming Soon
       </p>
     </section>
-    <section class="connect pt-52 pb-80">
+    <section class="connect pt-52 pb-80 grid justify-center">
       <p
         class="font-bold border-b-2 border-yellow-950 text-4xl pb-4 w-max ml-auto mr-auto mt-0 mb-0"
       >
         Connect With Us
       </p>
-      <div class="socials-wrapper"></div>
+      <div
+        class="socials-wrapper grid grid-cols-min gap-8 text-4xl justify-center pt-12"
+      >
+        <a
+          class="transition-all hover:text-gray-700"
+          href="https://twitter.com/lifestyledao"
+          target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a
+          class="transition-all hover:text-gray-700"
+          href="https://instagram.com/lifestyledao.io"
+          target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <a
+          class="transition-all hover:text-gray-700"
+          href="mailto:Lifestyledao@gmail.com?subject=Contact Us"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <form name="contact" class="flex pt-12 justify-between" netlify>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          class="border-gray-950 border-2 pt-2 pb-2 pl-2 outline-none w-full"
+        />
+        <p>
+          <button
+            type="submit"
+            class="bg-gray-950 pt-3 pb-3 pr-6 pl-6 text-white"
+          >
+            Send
+          </button>
+        </p>
+      </form>
     </section>
     <footer class="h-16 pl-6 bg-gray-950 flex items-center">
       <p class="text-white font-bold text-xl">Baron2 LLC.</p>
@@ -83,6 +126,10 @@
               gray: {
                 950: "#292728",
               },
+            },
+            gridTemplateColumns: {
+              // Simple 16 column grid
+              min: "repeat(3, min-content)",
             },
           },
         },
