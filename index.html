@@ -26,6 +26,43 @@
     <title>Lifestyle DAO</title>
   </head>
   <body>
+    <style>
+      /* Style the buttons that are used to open and close the accordion panel */
+      .accordion {
+        background-color: #2a2728;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        font-size: 1.25rem;
+        border: 2px solid #2a2728;
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active,
+      .accordion:hover {
+        background-color: transparent;
+        color: #2a2728;
+        border-radius: 5px 5px 0 0;
+      }
+
+      /* Style the accordion panel. Note: hidden by default */
+      .panel {
+        margin-top: 1rem;
+        padding: 1rem 1rem;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        border: 2px solid #2a2728;
+        border-radius: 0 0 5px 5px;
+        display: gap;
+      }
+    </style>
     <section class="hero h-screen grid place-items-center">
       <img src="./images//lifestyle_logo.svg" class="" />
     </section>
@@ -69,9 +106,127 @@
         </div>
       </div>
     </section>
+    <section class="team grid auto-rows-min justify-center">
+      <h2
+        class="font-bold border-b-2 border-yellow-950 text-center text-3xl md:text-4xl pb-4 ml-auto mr-auto mt-0 mb-0 pt-32"
+      >
+        Team
+      </h2>
+      <div
+        class="team-membersn pt-8 max-w-xl w-80 md:min-w-50 flex-col grid gap-4"
+      >
+        <div>
+          <button
+            class="accordion flex justify-between pointer flex-col md:flex-row"
+          >
+            <span>Blake Baron</span><span>Director of Operations +</span>
+          </button>
+          <div class="panel">
+            <p>
+              Blake Baron is a current senior at Syracuse University and based
+              out of New York. From his earliest days of discovering blockchain,
+              he has always been an enthusiast of the technology and grew a
+              passion for use cases that have not been introduced to the market
+              yet. His goal is for his work to provide a utility that brings
+              value to the consumer's everyday life and positively impacts
+              industry economies with said projects.
+            </p>
+          </div>
+        </div>
+        <div>
+          <button
+            class="accordion flex justify-between pointer flex-col md:flex-row"
+          >
+            <span>Alexander Baron</span
+            ><span>Director of Administration +</span>
+          </button>
+          <div class="panel">
+            <p>
+              Alex Baron is in his final semester as a J.D. Candidate at
+              Elisabeth Haub School of Law at Pace University, and is based out
+              of New York. His interest in blockchain technology began with
+              cryptocurrency while attending Penn State University (Class of
+              2019), and has since expanded into NFT's, Smart Contracts, and
+              DAO's. Alex is excited for the effect that smart contracts and
+              DAO's will have on the legal system: creating more transparency,
+              and minimizing opportunities for litigation to arise through
+              properly written smart contract parameters.
+            </p>
+          </div>
+        </div>
+        <div>
+          <button
+            class="accordion flex justify-between pointer flex-col md:flex-row"
+          >
+            <span>Erik Coleman</span><span>Director of Relations +</span>
+          </button>
+          <div class="panel grid gap-4">
+            <p>
+              Erik Coleman is a former NFL standout, active philanthropist and
+              sought-after sports analyst who uses his on-field experience,
+              extensive knowledge of sports and robust personality to bring new
+              and exciting insight to fans young and old
+            </p>
+            <p>
+              After a stellar collegiate career as the captain of the Washington
+              State football team, Coleman was drafted in the fifth round by the
+              New York Jets in 2004. Coleman played nine consecutive seasons in
+              the NFL with the New York Jets, Atlanta Falcons and the Detroit
+              Lions. Recognized for his unwavering work ethic and passion for
+              the game, Coleman became the first New York Jets player ever to
+              earn the NFL Rookie Defensive Player of the Month Award since the
+              honor’s inception in 1996 and finished his rookie season as the
+              NFL’s highest grossing member of its performance-pay program, the
+              league’s plan for rewarding low-salary players who outperform
+              their contracts. During his NFL tenure, Coleman’s highlights
+              include 653 combined career tackles and assists, 11 interceptions,
+              4 forced fumbles and 37 passes defended and he also served as the
+              player-elected NFL Players Association Team Representative five
+              out of his nine years in the league. Since his retirement in 2013,
+              Coleman has become a TV analyst for the New York Jets’ “Jets
+              Pregame Central", "Jets Post Game Show", SiriusXM NFL Radio’s
+              "Sunday Kickoff” , CBS NY’s “Jets Late Night” and MSG Network’s
+              “The Betting Exchange.” He also frequently appears as a sports
+              commentator on numerous sports shows and network programs such as
+              Hannity, Closing Bell with Liz Claman on Fox News, ABC, PIX 11,
+              CBS, ESPN Radio and WFAN, to name a few.
+            </p>
+            <p>
+              Coleman is an active philanthropist who supports a number of
+              causes close to his heart which includes, sickle cell anemia,
+              pediatric cancer and traumatic brain injury and is a mentor for My
+              Brother’s Keeper Mentorship Program. Moreover, Coleman is the
+              proud recipient of Manhattan Youth Baseball Excellence in Sports &
+              Philanthropy Award. When Coleman is not working or giving back to
+              the community, he enjoys spending time with his wife Sabrina and
+              their three beautiful children.
+            </p>
+          </div>
+        </div>
+        <div>
+          <button
+            class="accordion flex justify-between pointer flex-col md:flex-row"
+          >
+            <span>Gerald Conlan</span><span>Director of Membership +</span>
+          </button>
+          <div class="panel">
+            <p>
+              Gerald Conlan has over 20 years of experience working in Luxury
+              markets in the CPG, Food and Wine, and Health spaces. His
+              experience covers all aspects of sales, marketing, and ultimately
+              the end-user experience. Gerald’s ability to relate to both
+              consumers and vendors allows for seamless integration of systems
+              to provide an unparalleled service for all involved. Gerald
+              currently resides in the suburbs of New York City, and his
+              greatest joy is parenting.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="FAQ pt-20 pb-20 md:pt-32 md:pb-32">
       <p class="text-center text-3xl md:text-4xl font-bold pl-6 pr-6">
-        Team, FAQ’s, and More Coming Soon
+        FAQ’s, and More Coming Soon
       </p>
     </section>
     <section class="connect pt-20 pb-80 grid justify-center">
@@ -141,8 +296,31 @@
               // Simple 16 column grid
               min: "repeat(3, min-content)",
             },
+            minWidth: {
+              50: "50rem",
+            },
           },
         },
+      }
+    </script>
+    <script>
+      var acc = document.getElementsByClassName("accordion")
+      var i
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+          this.classList.toggle("active")
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling
+          if (panel.style.display === "block") {
+            panel.style.display = "none"
+          } else {
+            panel.style.display = "block"
+          }
+        })
       }
     </script>
   </body>
